@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gesture Controlled Particle System
+
+An interactive 3D particle system built with **Next.js**, **Three.js (React Three Fiber)**, and **MediaPipe**. Control a field of 4,000 glowing stars using hand gestures in real-time.
+
+## Features
+
+- **3D Particle System**: A dynamic sphere of star-like particles.
+- **Hand Tracking**: Real-time hand detection using your webcam.
+- **Interactive Gestures**:
+  - **Proximity Zoom**: Move your hand closer to the camera to zoom in.
+  - **Fist Rotation**: Make a **Fist** to spin the sphere. Open your hand (**Palm**) to stop.
+- **Post-Processing**: Bloom effect for a premium, glowing look.
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Deshmukh-Ayush/gesture-particles.git
+   cd gesture-particles
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Open in Browser**:
+   Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. **Allow Camera Access**:
+   The application requires camera access to track your hand gestures.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+Once the application is running and camera access is granted:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Show your hand** to the camera.
+- **Zoom**: Move your hand closer to the screen to zoom into the star field.
+- **Spin**: Make a **Fist** to start spinning the stars.
+- **Stop**: Open your hand to stop the rotation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/)
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
+- [MediaPipe Tasks Vision](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Crafted by Ayush Deshmukh with Antigravity AI**
